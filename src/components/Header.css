@@ -1,0 +1,112 @@
+.header {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 1.5rem 0;
+  z-index: 10;
+}
+
+.header .container {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 3rem;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-family: 'Bebas Neue', sans-serif;
+  font-size: 3.2rem;
+  font-weight: 400;
+  letter-spacing: 2px;
+  color: #fff;
+  text-decoration: none;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.5);
+  transition: transform 0.3s ease-in-out, color 0.3s ease-in-out; /* Added color transition */
+  position: relative;
+  padding-bottom: 5px;
+}
+
+/* --- THIS RULE IS THE FIX --- */
+.logo:hover {
+  color: #fff; /* This prevents the default blue link color */
+}
+
+.logo-verse {
+  color: #ffc107;
+}
+
+.logo::after {
+  content: '';
+  position: absolute;
+  width: 0;
+  height: 3px;
+  display: block;
+  margin-top: 5px;
+  right: 50%;
+  background: #ffc107;
+  transition: width 0.3s ease, right 0.3s ease;
+}
+
+.logo:hover::after {
+  width: 100%;
+  right: 0;
+}
+
+.header nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  gap: 2.5rem;
+  margin: 0;
+  padding: 0;
+}
+
+.header nav a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 1rem;
+  font-weight: 500;
+  padding-bottom: 5px;
+  position: relative;
+  text-shadow: 1px 1px 3px rgba(0, 0, 0, 0.4);
+}
+
+.header nav a:not(.profile-link)::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 0;
+  height: 2px;
+  background-color: #ffc107;
+  transition: width 0.3s ease;
+}
+
+.header nav a:not(.profile-link):hover::after {
+  width: 100%;
+}
+
+.profile-link {
+  background: none;
+  border: none;
+  padding: 0;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-icon {
+  width: 28px;
+  height: 28px;
+  color: #fff;
+  transition: color 0.3s ease, transform 0.3s ease;
+}
+
+.profile-link:hover .profile-icon {
+  color: #ffc107;
+  transform: scale(1.1);
+}

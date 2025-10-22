@@ -1,0 +1,61 @@
+/* Import a Google Font for a more elegant look */
+/* Add 'Caveat' to the font import URL */
+@import url('https://fonts.googleapis.com/css2?family=Caveat:wght@700&family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap');
+/* Add 'Aref Ruqaa Ink' to the font import URL */
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&family=Caveat:wght@700&family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&family=Bebas+Neue&family=Caveat:wght@700&family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap');
+/* Add 'Luckiest Guy' to the font import URL */
+@import url('https://fonts.googleapis.com/css2?family=Aref+Ruqaa+Ink:wght@700&family=Bebas+Neue&family=Caveat:wght@700&family=Luckiest+Guy&family=Playfair+Display:wght@700&family=Poppins:wght@300;400;500&display=swap');
+
+/* ... rest of the file ... */
+
+
+/* ... rest of the file ... */
+
+/* ... rest of the file remains the same ... */
+
+/* --- ADD THIS --- */
+/* This ensures the app's container fills the entire browser window */
+html,
+body,
+#root {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+/* --- END OF ADDITION --- */
+
+
+/* Global Reset */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Poppins', sans-serif;
+  line-height: 1.6;
+  background-color: #f4f4f4;
+  color: #333;
+}
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; /* Use min-height to handle content taller than the screen */
+}
+
+main {
+  flex-grow: 1;
+}
+
+.footer {
+  margin-top: auto;
+}
+/* Add this to the end of the file */
+.App.modal-open {
+  height: 100vh;
+  overflow: hidden;
+}

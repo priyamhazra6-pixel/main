@@ -1,0 +1,33 @@
+.culture-section {
+  background-color: #fff;
+  padding: 4rem 0 6rem;
+}
+
+.culture-section .container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 0 2rem;
+  text-align: center;
+}
+
+.culture-section h2 {
+  font-family: 'Aref Ruqaa Ink', serif;
+  font-size: 4rem;
+  font-weight: 700;
+  color: #2c2c2c;
+  margin-bottom: 2rem;
+  transition: color 0.3s ease; /* Added transition */
+}
+
+/* --- NEW HOVER EFFECT --- */
+.culture-section h2:hover {
+  color: #ffc107;
+  cursor: default;
+}
+
+.culture-section p {
+  font-family: 'Poppins', sans-serif;
+  font-size: 1.1rem;
+  line-height: 1.8;
+  color: #555;
+}
